@@ -12,6 +12,7 @@ public class EnemyAnimation : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animations = GetComponent<Animations>();
     }
+    
     public void PlayAnimation(bool isMove)
     {
         _animations.PlayAnimationMove(isMove);
