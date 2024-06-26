@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _enemy: {fileID: 0}
+  _enemy: {fileID: 4868687693682639588}
 --- !u!1 &3517510872370482037
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 4868687693682639588}
   - component: {fileID: 445028342105603816}
   - component: {fileID: 1581908499837875470}
+  - component: {fileID: 1176461983656796865}
   - component: {fileID: 7185493203250844323}
   m_Layer: 0
   m_Name: Rino
@@ -462,6 +463,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6753626, y: 1.4037167}
   m_EdgeRadius: 0
+--- !u!114 &1176461983656796865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514568828484796667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecc42de68c43ef4a8d3208d0181e7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxDistanceToPoint: 0.3
+  _wayPoints:
+  - {fileID: 6115025169100652350}
+  - {fileID: 7052449738648108641}
+  _enemyMover: {fileID: 7185493203250844323}
+  _enemyAnimation: {fileID: 1068311953173304102}
+  _sounds: {fileID: 2381117393676658223}
 --- !u!114 &7185493203250844323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,13 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e9fc48b96f29e4ead0d6159a766afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 0
-  _maxDistanceToPoint: 0.3
-  _wayPoints:
-  - {fileID: 6115025169100652350}
-  - {fileID: 7052449738648108641}
-  _sounds: {fileID: 2381117393676658223}
-  _animation: {fileID: 1068311953173304102}
+  _moveSpeed: 7
 --- !u!1 &6898823711319945697
 GameObject:
   m_ObjectHideFlags: 0

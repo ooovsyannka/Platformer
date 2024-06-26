@@ -12,7 +12,6 @@ public class Orange : MonoBehaviour
     private State _state;
     private int _maxCount = 10;
     private bool _isDie;
-    
 
     public event Action Died;
 

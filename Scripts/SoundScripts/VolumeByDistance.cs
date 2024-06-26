@@ -4,7 +4,7 @@
 
 public class VolumeByDistance : MonoBehaviour
 {
-    [SerializeField] private PlayerMovement _player;
+    [SerializeField] private Player _player;
     [SerializeField] private Transform _enemy;
 
     private Sounds _sounds;

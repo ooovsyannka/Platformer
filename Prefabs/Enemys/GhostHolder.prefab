@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 6018158510435765172}
   - component: {fileID: 5941411485708184931}
   - component: {fileID: 8797553512288866330}
+  - component: {fileID: 8795353853478839516}
   - component: {fileID: 9146067783739241787}
   m_Layer: 0
   m_Name: Ghost
@@ -326,6 +327,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8795353853478839516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515861178066623480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecc42de68c43ef4a8d3208d0181e7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxDistanceToPoint: 0.3
+  _wayPoints:
+  - {fileID: 6072914254770873897}
+  - {fileID: 8773550717229072838}
+  _enemyMover: {fileID: 9146067783739241787}
+  _enemyAnimation: {fileID: 8172566846841250397}
+  _sounds: {fileID: 4091025884589413598}
 --- !u!114 &9146067783739241787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,12 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 50
-  _maxDistanceToPoint: 0.3
-  _wayPoints:
-  - {fileID: 8773550717229072838}
-  - {fileID: 6072914254770873897}
-  _sounds: {fileID: 4091025884589413598}
-  _animation: {fileID: 8172566846841250397}
 --- !u!1 &6867671350843706256
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,4 +519,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 8475996962005977727, guid: d6884910c21760d4a8942f1f507dd9b0, type: 3}
-  _enemy: {fileID: 0}
+  _enemy: {fileID: 6018158510435765172}
