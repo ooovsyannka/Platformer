@@ -7,7 +7,6 @@ public class InputReader : MonoBehaviour
     public float HorizontalInput {  get; private set; }
     public bool IsJump {  get; private set; }
 
-
     private void Update()
     {
         HorizontalInput = Input.GetAxisRaw(Horizontal);
